@@ -1,0 +1,27 @@
+[project]
+name = "agentic-ai-lab"
+version = "0.1.0"
+description = "Hands-on projects exploring AI agent patterns — tool use, multi-agent orchestration, and autonomous workflows — built with CrewAI, LangGraph, AutoGen, and MCP using local models via Ollama."
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "autogen-agentchat>=0.7.5",
+    "crewai>=1.6.1",
+    "ipykernel>=7.2.0",
+    "jupyter>=1.1.1",
+    "langchain-community>=0.4.1",
+    "langgraph>=1.0.10",
+    "openai>=2.26.0",
+    "python-dotenv>=1.2.2",
+]
+
+[dependency-groups]
+dev = [
+    "commitizen>=4.13.9",
+    "pre-commit>=4.5.1",
+]
+
+[tool.commitizen]
+name = "cz_conventional_commits"
+version = "0.1.0"
+tag_format = "v$version"
